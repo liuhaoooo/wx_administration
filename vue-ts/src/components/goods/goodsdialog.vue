@@ -29,7 +29,7 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="cancel">取 消</el-button>
+        <el-button @click="$emit("close", false)">取 消</el-button>
         <el-button type="primary" @click="change">确 定</el-button>
       </div>
     </el-dialog>
@@ -94,10 +94,7 @@ export default class storeadmin extends Vue {
       );
     }
   }
-  //点击取消
-  cancel() {
-    this.$emit("close", false);
-  }
+
 }
 </script>
 <style lang="scss">
