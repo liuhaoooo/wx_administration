@@ -119,7 +119,7 @@ export default class storeadmin extends Vue {
   public idArr: tableData[] = []; //已勾选的数据
   public searchtext: string = ""; //搜索框
 
-  public datas: datas = {} as datas; //修改封面需要传的参数
+  public datas: datas = {} as datas; //修改封面需要传的参数 
   //方法-----------------------------------------
   public created(): void {
     this.getstore();
